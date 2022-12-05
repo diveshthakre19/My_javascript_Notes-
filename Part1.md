@@ -1,4 +1,4 @@
-# Variable and Data types
+## Variable and Data types
 
 variables are like a like a Box Where we can store values.
 
@@ -138,5 +138,7 @@ let i = 5;
   while (i < 4) i++;
 }
 ```
+
+Also there are two types of loops **_for loop_** & **_for in_** loop we will learn about them in future.
 
 ---
