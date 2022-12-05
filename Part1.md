@@ -104,8 +104,12 @@ condition
 - for loops a block of code x no. of times
 
 ```javascript
+for (statement1; statemant2; statement3) {
+  // run this code
+}
+
 for (let i = 0; i <= 10; i++) {
-  // this code will run 10 times
+  console.log(i);
 }
 ```
 
@@ -113,7 +117,7 @@ for (let i = 0; i <= 10; i++) {
 - statemat 2 is the condition on which loop continues to run.
 - statement 3 is executed every time loop body is executed.
 
-## 6) While Loop
+## 7) While Loop
 
 > while loop will exicute the code as long as the given condition evaluates true .
 
@@ -127,7 +131,7 @@ while (i < 12) {
 
 ---
 
-## 6) Do While Loop
+## 8) Do While Loop
 
 > while loop will run as long as the given condition evaluates true. but, unlike previous types it will first run the code and then evaluates the code, so even if the condition is false it will run **_atleast one time_**, it has its own use cases.
 
@@ -139,6 +143,35 @@ let i = 5;
 }
 ```
 
-Also there are two types of loops **_for loop_** & **_for in_** loop we will learn about them in future.
+- Also there are two types of loops **_for loop_** & **_for in_** loop we will learn about them in future.
 
 ---
+
+## 9) Functions
+
+> Function is like a mini program where we can perform some specific task based on the code written inside it's block and arguments passed.
+
+- syntax
+
+```javascript
+ function fnSampel=(x,z){
+  // code which will run when someone call this function.
+  console.log(x-z)
+ }
+ fnSampel(50,3) // function invocation
+```
+
+function invacation is the way to use the code written inside the function.
+
+- functions also can return the value to the value which will go inside the caller.
+
+```javascript
+ function sum=(a,b,c){
+  let ans = (a+b+c)
+   return ans;
+ }
+
+ let myAnswer = sum(5,9,1)
+ console.log(myAnswer) // 15
+
+```
