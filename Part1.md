@@ -2,14 +2,14 @@
 
 variables are like a like a Box Where we can store values.
 
-# Rules for choosing variables
+## Rules for choosing variables
 
 - Letters, Digits, UnderScores and $ sing allowed
 - Must begin with $, \_ or a letter
 - js Reserved key words cannot be used as a variable name
-- js is case sensitive language so be aware
+- javascript is case sensitive language so be aware.
 
-# const, let and var
+## const, let and var
 
 ## var vs let in Javascript
 
@@ -29,7 +29,6 @@ a = "Eighty seven";
 console.log(a); // "Eighty seven"
 
 // let 4divesh = "this is not allowed"
-// --------------------------------------------
 ```
 
 ## 3) Primitive and object
@@ -106,10 +105,38 @@ condition
 
 ```javascript
 for (let i = 0; i <= 10; i++) {
-  // this code will exicute 10 times
+  // this code will run 10 times
 }
 ```
 
-- statement 1 is executed one time
+- statement 1 is executed one time.
 - statemat 2 is the condition on which loop continues to run.
-- statement 3 is executed every time loop body is executed
+- statement 3 is executed every time loop body is executed.
+
+## 6) While Loop
+
+> while loop will exicute the code as long as the given condition evaluates true .
+
+```javascript
+let i = 0;
+while (i < 12) {
+  // run this code
+  i++;
+}
+```
+
+---
+
+## 6) Do While Loop
+
+> while loop will run as long as the given condition evaluates true. but, unlike previous types it will first run the code and then evaluates the code, so even if the condition is false it will run **_atleast one time_**, it has its own use cases.
+
+```javascript
+let i = 5;
+{
+  // run this code
+  while (i < 4) i++;
+}
+```
+
+---
