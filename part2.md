@@ -40,8 +40,24 @@ console.log(string1.length); // 14 (it also count spaces)
 
 > The toupperCase() method in JavaScript is used to convert all the characters in a string to uppercase. This method does not take any arguments and returns the new string in uppercase.
 
+- toupperCase() method is a simple and effective way to convert a string to uppercase in JavaScript.
+
 ```javascript
 const str = "Hello Universe";
-const capetalStr = str.toUpperCase();
-console.log(str); // 14 (it also count spaces)
+const upperStr = str.toUpperCase();
+console.log(upperStr); // 'HELLO UNIVERSE'
 ```
+
+---
+
+### toLowerCase()
+
+> The toLowerCase() method in JavaScript is a string method that converts all the letters in a string to lowercase. This method does not affect any other characters in the string, such as numbers or special characters. It only converts the letters to lowercase.
+
+```javascript
+const str = "HELLO UNIVERSE";
+const lowerStr = str.toUpperCase();
+console.log(lowerStr); // 'hello universe'
+```
+
+---
