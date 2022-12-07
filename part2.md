@@ -35,3 +35,13 @@ console.log(user1) // `my user id is 449`
 const string1 = "Hello Universe";
 console.log(string1.length); // 14 (it also count spaces)
 ```
+
+### toUpperCase()
+
+> The toupperCase() method in JavaScript is used to convert all the characters in a string to uppercase. This method does not take any arguments and returns the new string in uppercase.
+
+```javascript
+const str = "Hello Universe";
+const capetalStr = str.toUpperCase();
+console.log(str); // 14 (it also count spaces)
+```
