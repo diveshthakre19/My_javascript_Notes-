@@ -61,3 +61,38 @@ console.log(lowerStr); // 'hello universe'
 ```
 
 ---
+
+### .trim() method
+
+> In JavaScript, the trim() method is used to remove whitespace from the beginning and end of a string. This can be useful when you want to make sure that the data you're working with doesn't have any unnecessary whitespace at the beginning or end.
+
+```javascript
+const str = "       extra whiteSpace     ";
+const trimedStr = str.trim();
+console.log(trimedStr); //'extra whiteSpace'
+```
+
+---
+
+### .concat()
+
+> The concat method in javascript strings is used to combine multiple strings into one. It takes in one or more strings as arguments and returns a new string that contains the concatenated values of all the strings passed as arguments.
+
+For example, the following code:
+
+```javascript
+let firstName = "Divesh";
+let lastName = "Thakre";
+let age = "19";
+let details = firstName.concat(lastName, age);
+console.log(details); // 'DiveshThakre19'
+```
+
+- To combine multiple strings we canuse + operator can be used .
+
+```javascript
+let firstName = "Divesh";
+let lastName = "Thakre";
+let details = firstName + lastname;
+console.log(details); // 'DiveshThakre19'
+```
