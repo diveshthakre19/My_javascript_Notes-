@@ -94,5 +94,25 @@ console.log(details); // 'DiveshThakre19'
 let firstName = "Divesh";
 let lastName = "Thakre";
 let details = firstName + lastname;
-console.log(details); // 'DiveshThakre19'
+console.log(details); // 'DiveshThakre'
+```
+
+---
+
+### Convert strings into Numbers
+
+```javascript
+let userInput = "19";
+console.log(typeof userInput); // string
+let userAge = Number(userInput);
+console.log(typeof userAge); // number
+```
+
+### Convert Number into Strings
+
+```javascript
+let userInput = 8547547545677247542587;
+console.log(typeof userInput); // number
+let userPassword = String(userInput);
+console.log(typeof userPassword); // string
 ```
