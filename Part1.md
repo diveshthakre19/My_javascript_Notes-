@@ -1,6 +1,26 @@
 ## Variable and Data types
 
-variables are like a like a Box Where we can store values.
+Consider a variable like a box. We can label that box and do anything with it. We can assign specific types of values, which JavaScript allows. We will discuss the types of values later.
+The purpose of a variable is to store data, and that data can be manipulated in the program."
+
+To create a variable we have to do 3 steps let's understand
+
+```javascript
+var name; // initiliazation of variable with identifir name
+name = "Divesh"; // assingning a value to it
+console.log(name); // using that stored valued value from variable
+```
+
+in earlier version of variables were solely dedicated using the var keyword followed by the name of the variable and a semicolon
+
+but now after es6 update we have two other ways to declare a variable let and const
+we will take a look on them one by one and understand why Developers are not using var in modern projects.
+
+```javascript
+let name; // initiliazation of variable with identifir name
+name = "Divesh"; // assingning a value to it
+console.log(name); // using that stored valued value from variable
+```
 
 ## Rules for choosing variables
 
