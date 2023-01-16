@@ -65,8 +65,53 @@ function hoist() {
 hoist(); // hoisting is cool
 ```
 
-The variable declaration, var message whose scope is the function hoist(), is hoisted to the top of the function.
+The variable declaration, var message whose scope is the function hoist( ), is hoisted to the top of the function.
 
 Newer versions of js is trying to get away from this way of writing code.
 
 it is good to know that hoisting exists, but you shoud never actually use it. Always declare variables excatly where they shoud be at the top of the scope they're used in. That way, your code is always going to be predictable, and you don't have to rely on hoisting.
+
+Let and const hoist but you cannot access them before the acyual declaration is eveluated at runtime. Ehat dose this mean? Let's see it in a simle example:
+
+```javascript
+console.log(itsVarString); // undefined
+var itsVarString = "var";
+
+console.log(itsLetString); // RefrenceError
+let itsLetString = "let";
+
+console.log(itsConstString); // RefrenceError
+const itsConstString = "const";
+```
+
+with let and const you gat back excatly what you woud expect: a refrence error. And that's good. Thats javaScripts's way of letting us know that we need to write clean code.
+
+- you shoud always declare variable before using them, it's common sense.
+
+### Functional Hoisting
+
+The same var variables, the function declaration are hoisted comletly to the top.
+
+```javascript
+hoisted(); // This function has been hoisted.
+
+function hoisted() {
+  console.log("This function has been hoisted.");
+}
+```
+
+Again, woud youever need to do this? No.
+Always declare the function before you call it.
+
+### Function Expression
+
+Another great thing, is that constants and functions expression save us from doing that. Function expression (the more modern way of writing functions, with const keyword) are not hoisted.
+
+```javascript
+functionExpression(); // RefrenceError
+const functionExpression = () => {
+  console.log("Will this work?");
+};
+```
+
+hoisting, as well as closures, Which we're going to see next, are complex topics. i woud say that they are not all that use full in everyday coding.
