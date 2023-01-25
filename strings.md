@@ -1,4 +1,4 @@
-## Strings Intro
+# Strings Intro
 
 In javascript, and in any programing language for that mater, we need to store text.
 in javascript we use strings to store text. String is nothing more than a primitive data type .
@@ -136,14 +136,17 @@ Great! In this part, we learn how to get a length of the string using the length
 
 Now let's learn how we can change the case of the string!
 
+---
+
 ## Change string case
 
 In this article we're going to learn how we can change the case of a string. What is the case? you have definately hered about upperCASE amd lowerCASE letters. That's it!
 
 In javascript, we have only two really simple and staringt forward methods for changing the character case and they are:
 
-string.toLowerCase( )
-string.toUpperCase( )
+## string.toLowerCase( )
+
+## string.toUpperCase( )
 
 Let's understand with this example:
 
@@ -157,11 +160,13 @@ string.toupperCase(); // "HELLO! HOW ARE YOU, DIVESH?"
 Notice how we have parantheses on these two. That's because they are functions, more precisely:methods we call on a string.
 Let's learn more useful string methods!
 
+---
+
 ## Searching for a Substring
 
 There are multiple ways to look for a substring with a string.
 
-### str.indexOf( )
+## str.indexOf( )
 
 The first method is str.indexOf(substr, pos)
 It looks for the substr in str, starting from the given position pos, and returns the positions where the match was found or -1 if nothing can be found.
@@ -181,7 +186,9 @@ For instance, the first occurrence of 'cars' is at psition 7. To look for the ne
 string.indexOf("cars", 8); // 22
 ```
 
-### str.lastIndexOf( )
+---
+
+## str.lastIndexOf( )
 
 str.lastIndexOf(substr, position)
 There is also a similar method
@@ -190,3 +197,104 @@ str.lastIndexOf(substr, position) that searches from the end of a string to its 
 Great! Now you can use indexOf methods if you need to find the exact position of some substrings in a string.
 
 ---
+
+## includes( )
+
+But meuch more often you're just intersted if a string constins something, and you're not concrened where is it in the string.
+For these case you can use string.includes( )
+It simply returns true or false.
+It's right choice if we need to test for the match, but don't need its position:
+
+```javascript
+const string = "I love cars, he said, cars are great!";
+string.includes("cars"); // true
+```
+
+As with the indexOf method, he optional second argument of str.includes is the position to start searching from.
+
+---
+
+## str.startsWith( ) and str.endsWith( )
+
+The method str.startswith and str.endsWith do exacatly what they say:
+
+```javascript
+string.startsWith("I"); // true
+string.endsWith("cars"); // false
+```
+
+The best method for getting a substring of a string is str.slice( ).
+
+Let's show it on an example:
+
+---
+
+## str.slice(start [, end])
+
+Returns the part of the string from start to (but not including) ens. For instance:
+
+```javascript
+const exampleString = "javascript'
+exampleString.slice(4,10) // script
+```
+
+some times, we might want to split the string into multiple substrings. For that we'll be using a string method calles split( ).
+
+Let me give yoou some examples:
+This is how we can split a word into characters:
+
+```javascript
+const exampleString = "dog";
+console.log(exampleString.split("")); //(3) ['d', 'o', 'g']
+```
+
+Notice how we passed an empty string as a first parametere of a split method.
+This is how we can split a sentence in words:
+
+```javascript
+const string = "The quick brown fox jumps over the lazy dog.";
+console.log(string.split(" ")); //(9) ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog.']
+```
+
+The result of both examples is an array!
+Exacatly.
+
+---
+
+## Reverse a string
+
+## REVERSE
+
+There isn't a built in string method that reverses a string. Rather, we can use the knowledge we previously gained! Remember how we can split a string into array characters? Array do have a reverse method.
+So this is a process.
+
+1. Split a string
+2. Reverse newly created a array
+3. Turn the array into string using join( )
+
+```javascript
+const str = "test";
+str.split("").reverse().join(""); // tset
+```
+
+---
+
+## REPEAT
+
+let's say you want to repeat a string an x number of times. you can do that using the string.repeat( ) method.
+
+```javascript
+const dogSays = "woof";
+console.log(dogSays.repeat(4)); // woofwoofwoofwoof
+```
+
+---
+
+## TRIM
+
+Sometimes, users don't know how to type. And we need to clean empty spaces using trim.
+
+```javascript
+const str = "     Hello World!     ";
+console.log(str.trim()); // "Hello World"
+```
